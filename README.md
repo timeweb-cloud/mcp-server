@@ -1,4 +1,8 @@
-# Timeweb MCP Server (Experimental)
+# Timeweb MCP Server (Deprecated)
+
+> [!WARNING]
+> **Сервер устарел и больше не развивается.** Актуальный официальный MCP-сервер Timeweb Cloud
+> находится здесь: https://github.com/timeweb-cloud/mcp
 
 MCP сервер для автоматизации деплоя приложений в Timeweb Cloud через Model Context Protocol.
 
