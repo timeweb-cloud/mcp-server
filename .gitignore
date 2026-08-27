@@ -61,3 +61,4 @@ jspm_packages/
 .env
 
 .history/
+.specs/

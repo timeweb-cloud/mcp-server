@@ -4,6 +4,7 @@
   "description": "MCP сервер для автоматизации развертывания приложений в Timeweb Cloud",
   "scripts": {
     "build": "tsdown && chmod 755 dist/index.js",
+    "prepare": "npm run build",
     "start": "node -r dotenv/config dist/index.js",
     "inspect": "export DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run start",
     "clean": "rm -rf dist",

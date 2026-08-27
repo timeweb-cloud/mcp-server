@@ -47,7 +47,7 @@ const handler = async (params: {
 • Зона доступности: ${ip.availability_zone}
 • DDoS Guard: ${ip.is_ddos_guard ? "✅ Включен" : "❌ Отключен"}
 • Комментарий: ${ip.comment || "Нет"}
-• Создан: ${new Date(ip.created_at).toLocaleString("ru-RU")}
+• Создан: ${ip.created_at ? new Date(ip.created_at).toLocaleString("ru-RU") : "—"}
 
 🎉 Floating IP готов к использованию!`);
   } catch (error) {

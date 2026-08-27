@@ -1,0 +1,21 @@
+export type DomainRequest = {
+  id: number;
+  account_id?: string;
+  fqdn: string;
+  auth_code?: string | null;
+  date?: string;
+  domain_bundle_id?: string | null;
+  error_code_transfer?: string | null;
+  group_id?: number;
+  is_antispam_enabled?: boolean;
+  is_autoprolong_enabled?: boolean;
+  is_whois_privacy_enabled?: boolean;
+  message?: string | null;
+  money_source?: "use" | "bonus" | "invoice" | null;
+  period?: string;
+  person_id?: number | null;
+  prime?: string | null;
+  status?: string;
+  type?: "register" | "prolong" | "transfer" | string;
+  [key: string]: unknown;
+};

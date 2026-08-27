@@ -22,7 +22,7 @@ const startServer = async () => {
     }
   );
 
-  Object.values(tools).forEach((tool) => {
+  Object.values(tools).forEach((tool: any) => {
     server.registerTool(
       tool.name,
       {
@@ -41,7 +41,7 @@ const startServer = async () => {
     );
   });
 
-  Object.values(resources).forEach((resource) => {
+  Object.values(resources).forEach((resource: any) => {
     server.registerResource(
       resource.name,
       resource.uri,
@@ -53,7 +53,7 @@ const startServer = async () => {
     );
   });
 
-  Object.values(prompts).forEach((prompt) => {
+  Object.values(prompts).forEach((prompt: any) => {
     server.registerPrompt(prompt.name, prompt.config, prompt.handler);
   });
 
